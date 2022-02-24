@@ -46,16 +46,16 @@ export default function TextForm(props) {
     const [text, setText] = useState('')
     return (
         <>
-            <div className='container'>
+            <div className='container' >
                 <h1>{props.heading} </h1>
                 <div className="mb-3">
                     <label for="myBox" className="form-label">Example textarea</label>
                     <textarea className="form-control" value={text} onChange={handelOnChange} id="myBox" rows="8"></textarea>
-                    <button className='btn btn-primary mx-2' onClick={handelClearClick} >Clear</button>
-                    <button className='btn btn-dark mx-2' onClick={handelUpClick} >Convert to UpperCase</button>
-                    <button className='btn btn-dark mx-2' onClick={handelLoClick} >Convert to LowerCase</button>
-                    <button className='btn btn-dark mx-2' onClick={handelCopyClick} >Copy</button>
-                    <button className='btn btn-dark mx-2' onClick={handelSpaceClick} >RemoveSpace</button>
+                    <button className='btn btn-primary my-2' onClick={handelClearClick} >Clear</button>
+                    <button className='btn btn-dark my-2 mx-2' onClick={handelUpClick} >Convert to UpperCase</button>
+                    <button className='btn btn-dark my-2 mx-2' onClick={handelLoClick} >Convert to LowerCase</button>
+                    <button className='btn btn-dark my-2 mx-2' onClick={handelCopyClick} >Copy</button>
+                    <button className='btn btn-dark my-2 mx-2' onClick={handelSpaceClick} >RemoveSpace</button>
                 </div>
             </div>
             <div className='container my-3'>
